@@ -1,0 +1,16 @@
+#
+# cd www/cloud/sugarcrm/daemons
+# sudo crontab -utwolf cron.dat
+#
+# Min (0-59) hour (0-23) day (1-31) month (1-12) - - day of week (0-6) 0=sun
+#
+# NOTE: TIMES ARE GMT (+4 hours) (+6 hours from MST)
+#
+# TZ=EST7EST
+MAILTO=twolf@sugarcrm.com
+# ----
+
+# -----------------------------------------------------------------------
+# 00,05,10,15,20,25,30,35,40,45,50,55 * * * * /Applications/MAMP/bin/php/php5.3.6/bin/php /Users/twolfe/projects/Cloud/sugarcrm/daemons/jobhandler.php
+
+*/5 * * * * /Applications/MAMP/bin/php/php5.3.6/bin/php /Users/twolfe/projects/Cloud/sugarcrm/daemons/jobhandler.php

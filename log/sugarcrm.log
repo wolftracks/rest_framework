@@ -1,0 +1,33 @@
+2014-03-25T20:23:28-04:00 [DEBUG] Authenticating Customer: [sugartraining1]
+2014-03-25T20:23:28-04:00 [INFO] CUSTOMER IDENTITY:da6683c0-8fcc-e2f5-16ff-533216e13eec FROM USER:sugartraining1 INSTANCE:d382ac826346739e7c08599419310271 SITE_URL:http://localhost:8888/mango/toffee/ent/sugarcrm
+2014-03-25T20:23:28-04:00 [DEBUG] REST Endpoint: GET email
+2014-03-25T20:23:30-04:00 [DEBUG] Authenticating Customer: [sugartraining1]
+2014-03-25T20:23:30-04:00 [INFO] CUSTOMER IDENTITY:da6683c0-8fcc-e2f5-16ff-533216e13eec FROM USER:sugartraining1 INSTANCE:d382ac826346739e7c08599419310271 SITE_URL:http://localhost:8888/mango/toffee/ent/sugarcrm
+2014-03-25T20:23:30-04:00 [DEBUG] REST Endpoint: GET email
+2014-03-25T20:24:34-04:00 [DEBUG] Authenticating Customer: [sugartraining1]
+2014-03-25T20:24:34-04:00 [INFO] CUSTOMER IDENTITY:da6683c0-8fcc-e2f5-16ff-533216e13eec FROM USER:sugartraining1 INSTANCE:d382ac826346739e7c08599419310271 SITE_URL:http://localhost:8888/mango/toffee/ent/sugarcrm
+2014-03-25T20:24:34-04:00 [DEBUG] REST Endpoint: GET email
+2014-03-25T20:24:36-04:00 [DEBUG] Authenticating Customer: [sugartraining1]
+2014-03-25T20:24:36-04:00 [INFO] CUSTOMER IDENTITY:da6683c0-8fcc-e2f5-16ff-533216e13eec FROM USER:sugartraining1 INSTANCE:d382ac826346739e7c08599419310271 SITE_URL:http://localhost:8888/mango/toffee/ent/sugarcrm
+2014-03-25T20:24:36-04:00 [DEBUG] REST Endpoint: GET email
+2014-03-30T14:56:35-04:00 [DEBUG] Authenticating Customer: [sugartraining1]
+2014-03-30T14:56:35-04:00 [INFO] CUSTOMER IDENTITY:5a8aae8d-d8e1-ef22-c75c-533868590809 FROM USER:sugartraining1 INSTANCE:f8535429d44e7eddf79f172ba63b9374 SITE_URL:http://localhost:8888/mango/toffee/ent/sugarcrm
+2014-03-30T14:56:35-04:00 [DEBUG] REST Endpoint: POST email
+2014-03-30T14:56:38-04:00 [INFO] SendMail Immediate: customer=5a8aae8d-d8e1-ef22-c75c-533868590809  TotalRecipients=2  PacketSize=2  Attempted=2  Accepted=2
+2014-04-02T03:57:03-04:00 [ERROR] DatabaseException - @(JobQueueTest.php:113 [0]) - 
+2014-04-02T03:57:03-04:00 [ERROR] DatabaseException - @(JobQueueTest.php:133 [0]) - 
+2014-04-02T03:57:03-04:00 [ERROR] DatabaseException - @(JobQueueTest.php:155 [0]) - 
+2014-04-02T03:57:03-04:00 [ERROR] setJobStatus: Update did not result in Expected Row Change
+2014-04-02T03:57:03-04:00 [ERROR] JobQueue: CreateJob failed - Argument 'Customer' - expected type: string
+2014-04-02T03:57:03-04:00 [ERROR] JobQueue: CreateJob failed - Argument 'Customer' required, but empty
+2014-04-02T03:57:03-04:00 [ERROR] JobQueue: CreateJob failed - Argument 'Payload' required, but empty
+2014-04-02T03:57:03-04:00 [ERROR] JobQueue: CreateJob failed - Argument 'JobType' required, but empty
+2014-04-02T03:57:03-04:00 [ERROR] JobQueue: CreateJob failed - Argument 'JobType' - type: enum = unsupported value
+2014-04-02T03:57:03-04:00 [ERROR] JobQueue: CreateJob failed - Argument 'JobType' - type: enum = unsupported value
+2014-04-02T03:57:03-04:00 [ERROR] DatabaseException - @(JobQueueTest.php:276 [0]) - 
+2014-04-02T03:57:03-04:00 [ERROR] createJob: Insert did not result in Expected Row Change
+2014-04-02T03:57:03-04:00 [ERROR] 
+2014-04-02T03:57:03-04:00 [ERROR] An exception happened: ( 403: not_authorized)Authentication Tokens Missing or Invalid
+2014-04-02T03:57:03-04:00 [ERROR] An exception happened: ( 403: not_authorized)Authentication Tokens Missing or Invalid
+2014-04-02T03:57:03-04:00 [ERROR] An exception happened: ( 403: not_authorized)Authentication Tokens Missing or Invalid
+2014-04-02T03:57:03-04:00 [ERROR] An exception happened: ( 403: not_authorized)Authentication Tokens Missing or Invalid

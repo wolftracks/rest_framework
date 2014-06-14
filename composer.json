@@ -1,0 +1,10 @@
+{
+    "minimum-stability" : "dev",
+    "require": {
+        "apache/log4php": "2.3.*",
+        "mandrill/mandrill": "1.0.*",
+        "phpunit/phpunit": "3.7.*",
+        "sendgrid/sendgrid": "1.1.*",
+        "aws/aws-sdk-php": "2.*"
+    }
+}

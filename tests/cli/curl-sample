@@ -1,0 +1,7 @@
+
+curl --header "API_USER: sugartraining1" http://localhost:8888/cloud/rest/v10/email/send
+curl --header "API_USER: sugartraining1" 'http://localhost:8888/cloud/rest/v10/email/tracking?max_num=3&last_id=128'
+
+
+curl --header "API_USER: sugartraining1" http://campaigns.sugarcrmlabs.com/cloud/rest/v10/email/send
+curl --header "API_USER: sugartraining1" 'http://campaigns.sugarcrmlabs.com/cloud/rest/v10/email/tracking?max_num=3&last_id=128'

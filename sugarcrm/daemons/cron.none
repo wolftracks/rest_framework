@@ -1,0 +1,8 @@
+# Min (0-59) hour (0-23) day (1-31) month (1-12) - - day of week (0-6) 0=sun
+#
+# NOTE: TIMES ARE GMT (+4 hours from EST)
+#
+TZ=EST7EDT
+MAILTO=twolf@sugarcrm.com
+# ----
+

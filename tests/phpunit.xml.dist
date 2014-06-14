@@ -1,0 +1,55 @@
+<!--
+/*********************************************************************************
+ * By installing or using this file, you are confirming on behalf of the entity
+ * subscribed to the SugarCRM Inc. product ("Company") that Company is bound by
+ * the SugarCRM Inc. Master Subscription Agreement ("MSA"), which is viewable at:
+ * http://www.sugarcrm.com/master-subscription-agreement
+ *
+ * If Company is not bound by the MSA, then by installing or using this file
+ * you are agreeing unconditionally that Company will be bound by the MSA and
+ * certifying that you have authority to bind Company accordingly.
+ *
+ * Copyright (C) 2004-2013 SugarCRM Inc.  All rights reserved.
+ ********************************************************************************/
+
+-->
+
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         strict="true"
+         timeoutForSmallTests="30"
+         timeoutForMediumTests="40"
+         timeoutForLargeTests="60"
+         syntaxCheck="false"
+         bootstrap="SugarTestHelper.php"
+        >
+    <php>
+        <ini name="intl.default_locale" value="en"/>
+        <ini name="intl.error_level" value="0"/>
+        <ini name="memory_limit" value="-1"/>
+    </php>
+
+    <testsuites>
+        <testsuite name="Sugar Test Suite">
+            <directory>../tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <blacklist>
+            <directory suffix=".php">./cache</directory>
+        </blacklist>
+        <whitelist>
+            <exclude>
+                <directory>./soap/</directory>
+                <directory>./service/</directory>
+                <directory>./rest/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

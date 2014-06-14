@@ -1,0 +1,46 @@
+#!/usr/bin/php
+<?php
+/*
+ * By installing or using this file, you are confirming on behalf of the entity
+ * subscribed to the SugarCRM Inc. product ("Company") that Company is bound by
+ * the SugarCRM Inc. Master Subscription Agreement ("MSA"), which is viewable at:
+ * http://www.sugarcrm.com/master-subscription-agreement
+ *
+ * If Company is not bound by the MSA, then by installing or using this file
+ * you are agreeing unconditionally that Company will be bound by the MSA and
+ * certifying that you have authority to bind Company accordingly.
+ *
+ * Copyright  2004-2013 SugarCRM Inc.  All rights reserved.
+ */
+
+$debug = false;  // Debug More to Log File
+
+require_once(dirname(__FILE__)."/../../lib/env/entrypoint.php");
+define('ENTRY_POINT_TYPE', 'daemon');
+  
+$imageFile =  dirname(__FILE__) . "/" . "superman.png";
+     
+$i=0;
+$command  =  "/usr/local/bin/phantomjs ";
+foreach($argv AS $arg) {    
+	if ($i > 0) {
+	   $command .= $arg . " ";
+	}
+ 	$i++;
+}
+
+//  $command  =  "";   
+//  $command .= "/usr/local/bin/phantomjs";
+//  $command .= " /home/twolf/www/cloud/bin/thumbnail/html2image.js";
+//  $command .= " http://campaigns.sugarcrmlabs.com/cloud/temp/sugartraining1-95cf6d9f-7a54-505e-7316-5318ca68cdea.html";
+//  $command .= " /home/twolf/www/cloud/temp/sugartraining1-95cf6d9f-7a54-505e-7316-5318ca68cdea.jpg";
+// $command .= " 2>&1";
+ 
+$data=array();  
+exec($command, $data, $output); 
+echo $command ."\n\n";
+echo "HTML2IMAGE OUTPUT=" . $output ."\n\n"; 
+echo "HTML2IMAGE DATA=";
+print_r($data);
+// echo "FILE($imageFile)";
+exit(0);
